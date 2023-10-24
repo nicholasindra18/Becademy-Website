@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Modul</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="d-grid navbar-detail">
+        <div class="row row-cols-3 w-100">
+            <div class="col d-flex align-items-center">
+                <img src="assets/panah.png" alt="" class="panah mx-5">
+            </div>
+            <div class="col">
+                <h4 class="text-white fw=bold">Dasar pemograman menggunakan bahasa C</h4>
+            </div>
+            <div class="col">
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-section d-flex" style="margin-top: 98px;">
+        <div class="algo-detail w-75 p-5">
+            <h1 class="color-blue">Apa itu algoritma?</h1>
+            <div class="video-container p-5">
+                <video class="video1" src="assets/Apa itu Algoritma.mp4" width="720px" height="426px" controls></video>
+            </div>
+            <h3 class="color-blue">Pengertian algoritma</h3>
+            <p style="margin-top: 15px">Algoritma adalah serangkaian langkah-langkah yang terorganisir dan terstruktur untuk menyelesaikan suatu masalah atau tugas tertentu. Algoritma adalah konsep dasar dalam ilmu komputer dan matematika yang digunakan untuk pemrosesan informasi, pengambilan keputusan, dan pemecahan masalah.</p>
+            <h3 class="color-blue">Komponen Algoritma</h3>
+            <ul>
+                <li class="fw-bold">Input (Masukan)</li>
+                <p>Informasi atau data yang diperlukan oelh algoritma untuk melakukan tugasnya. Input seringkali beruipa variabel atau nilai yang harus diolah</p>
+                <li class="fw-bold">Langkah - langkah (Instruksi)</li>
+                <p>Serangkaian perintah atau instruksi yang diberikan kepada komuter untuk melakukan tugas tertentu. Langkah - langkah ini yang harus jelas dan terstruktur </p>
+                <li class="fw-bold">Output (Keluaran)</li>
+                <p>Hasil atau jawaban dari algoritma setelah pemrosesan data. Output adalah tujuan utama dari algoritma</p>
+            </ul>
+            <h3 class="color-blue">Kesimpulan</h3>
+            <p>Algoritma adalah langkah-langkah terstruktur untuk menyelesaikan masalah. Mereka adalah dasar dari komputasi dan pemrosesan data. Pemahaman yang baik tentang algoritma penting dalam pengembangan perangkat lunak dan pemecahan masalah.</p>
+
+            <div class="forum">
+                <h4>Forum</h4>
+                <div class="input-field rounded-2" style="height: 188px; border: 1px solid #3E4B7C">
+                    <form action="" class="w-100 h-100 d-flex" id="myForm">
+                        <input type="text" style="width: 85%; border: none;" id="forum-content">
+                        <input type="button" class="btn btn-primary mt-4 ms-4" onclick="post()" value="post" style="height: 62px; width: 132px">
+                    </form>
+                </div>
+                <p  id="peringatan" style="color: red; display:none;">Mohon masukan sebuah kalimat*</p>
+                <div class="forum-content mt-5 rounded-2 d-flex justify-content-center align-items-center" style="height: 394px; border: 1px solid #3E4B7C;">
+                    <h1 id="empty-comment">There is no comment yet</h1>
+                </div>
+
+                <!-- <div class="new-forum-content mt-5 rounded-2 d-flex flex-column" style="height: 394px; border: 1px solid #3E4B7C;">
+                    <h1>Nicholas Indradjaja</h1>
+                    <p>sdgsdgsdgsdgdg</p>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="algo-materi w-25 h-300 p-5" style="border: 1px solid #3E4B7C;">
+            <button class="btn btn-primary" style="width: 90%">Buka discord server</button>
+            <div class="materi-belajar d-flex align-items-center py-4">
+                <img src="assets/panah2.png" alt="" width="44px" height="44px">
+                <h3 class="ms-4 color-blue fw-bold">Materi Belajar</h3>
+            </div>
+            <div class="pengenalan-dan-persiapan">
+                <h4 class="fw-bold mb-4">Pengenalan dan persiapan</h4>
+                <div class="pengenalan d-flex">
+                    <div class="icon me-4">
+                        <img src="assets/play-button.png" alt="" width="20px" height="20px">
+                    </div>
+                    <div class="tulisan d-flex flex-column">
+                        <p class="fw-bold color-blue">Apa itu algoritma?</p>
+                        <p>Instalasi Visual Studio Code</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pemograman">
+                <h4 class="fw-bold">Pemograman</h4>
+                <div class="pemograman-detail p-3">
+                    <p>Variabel, Array, Input, & Output</p>
+                    <p>Operator & Operand</p>
+                    <p>Selection</p>
+                    <p>Repetition</p>
+                    <p>Method (Function & Procedure)</p>
+                    <p>Struct</p>
+                </div>
+            </div>
+            <div class="penerapan-logika">
+                <h4 class="fw-bold">Penerapan Logika</h4>
+                <div class="logika-detail p-3">
+                    <p>Sorting</p>
+                    <p>Searching</p>
+                    <p>Recursive</p>
+                    <p>File Processing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>

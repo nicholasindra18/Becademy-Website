@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Becademy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="p-5 navbar navbar-expand-lg bg-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="assets/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- px-5 = untuk padidng kiri kanan
+                mx-5 untuk margin kiri kanan
+                w untuk width
+                d untuk display
+                gap untuk jarak
+             -->
+            <ul class="px-5 mx-5 navbar-nav w-100 d-flex justify-content-center gap-4 me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="kelas.html">Kelas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Disabled</a>
+              </li>
+            </ul>
+            <button class="btn btn-primary rounded-4">Mulai Belajar</button>
+          </div>
+        </div>
+    </nav>
+
+      <div class="hero d-flex flex-column align-items-center" style="margin-top: 150px;">
+        <div class="hero-text-section d-flex flex-column align-items-center justify-content-center">
+            <!-- fw-bold untuk meng bold sebuah text -->
+            <h1 class="text-center fw-bold">Belajar coding <span style="color:#3E4B7C">sampai jadi MVP</span> di kampus mu cuma disini</h1>
+            <p class="text-center w-5 p-3">Kelas berisi modul lengkap dengan video pembelajaran dan sesi belajar bareng tiap minggu biar makin jago</p>
+            <div class="hero-text-button">
+                <button class="btn btn-primary rounded-4 mx-5">Coba Gratis</button>
+                <a href="kelas.html"><button class="btn btn-secondary rounded-4">Lihat Semua Kelas</button></a>
+            </div>
+        </div>
+      </div>
+
+      <div class="image-section rounded-4 d-flex justify-content-center align-items-center my-50">
+          <h1>Ga perlu takut susah, ada Learning Session
+          </h1>
+      </div>
+
+      <div class="learning-session-section d-flex px-5">
+          <div class="learning-session-logo w-50 d-flex flex-column align-items-center">
+              <img src="assets/learning-session.png" alt="">
+              <p>Jadi Ga Bosen</p>
+          </div>
+          <div class="learning-session-text w-50 d-flex justify-content-center flex-column">
+              <p style="width: 587px" ><span style="color:#3E4B7C; font-weight: bold">Learning Session</span> adalah sesi belajar bersama yang diadakan setiap minggu untuk membahas secara lebih dalam dan interaktif</p>
+              <p style="width: 587px">Semua modul pembelajaran dalam kelas akan dibahas pada <span style="color:#3E4B7C; font-weight: bold ">Learning Session</span> dalam 1x pertemuan setiap modul</p>
+              <div class="button-learning text-left">
+                <button class="btn btn-primary">Coba Gratis</button>
+              </div>
+          </div>
+      </div>
+
+      <div class="daftar-kelas-section p-5 m-5">
+          <div class="heading-section d-flex justify-content-between">
+              <h1 style="color: #3E4B7C; font-weight: bold">Daftar Kelas</h1>
+              <a href="kelas.html"><button class="btn btn-secondary rounded-4">Lihat Semua Kelas</button></a>
+          </div>
+          <div class="card-section d-flex justify-content-between mt-5">
+            <div class="card" style="width: 18rem;">
+              <img src="assets/card 1.png" class="card-img-top" alt="...">
+              <p class="rounded-3 mt-3 fw-bold"style="background-color: #D3DAF2; width: 53px; text-align: center">CLI</p>
+              <div class="card-body">
+                <h3 class="card-title">Dasar pemrograman menggunakan bahasa C</h3>
+                <div class="description d-flex my-2">
+                  <div class="modul d-flex me-5">
+                      <img src="assets/modul.png" alt="" width="16px" height="20">
+                      <p class="ms-2">16 Modul</p>
+                  </div>
+                  <div class="time d-flex">
+                      <img src="assets/time.png" alt="" width="20px" height="20px">
+                      <p class="ms-2">72 Jam</p>
+                  </div>
+                </div>
+                <a href="#"><button class="btn btn-primary">Lihat Kelas</button></a>
+              </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+              <img src="assets/card 2.png" class="card-img-top" alt="...">
+              <p class="rounded-3 mt-3 fw-bold"style="background-color: #D3EDD2; width: 106px; text-align: center">Database</p>
+              <div class="card-body">
+                <h3 class="card-title">Dasar database menggunakan MySQL</h3>
+                <div class="description d-flex my-2">
+                  <div class="modul d-flex me-5">
+                      <img src="assets/modul.png" alt="" width="16px" height="20">
+                      <p class="ms-2">12 Modul</p>
+                  </div>
+                  <div class="time d-flex">
+                      <img src="assets/time.png" alt="" width="20px" height="20px">
+                      <p class="ms-2">72 Jam</p>
+                  </div>
+                </div>
+                <a href="#"><button class="btn btn-primary">Lihat Kelas</button></a>
+              </div>
+            </div>
+  
+            <div class="card" style="width: 18rem;">
+              <img src="assets/card 3.png" class="card-img-top" alt="...">
+              <p class="rounded-3 mt-3 fw-bold"style="background-color: #EDE9D2; width: 89px; text-align: center">Website</p>
+              <div class="card-body">
+                <h3 class="card-title">Membuat landing page menggunakan bootstrap</h3>
+                <div class="description d-flex my-2">
+                  <div class="modul d-flex me-5">
+                      <img src="assets/modul.png" alt="" width="16px" height="20">
+                      <p class="ms-2">4 Modul</p>
+                  </div>
+                  <div class="time d-flex">
+                      <img src="assets/time.png" alt="" width="20px" height="20px">
+                      <p class="ms-2">4 Jam</p>
+                  </div>
+                </div>
+                <a href="#"><button class="btn btn-primary">Lihat Kelas</button></a>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="buat-akun-section d-flex flex-column align-items-center justify-content-center">
+           <h1>Tunggu apa lagi?</h1>
+           <h1>langsung belajar sekarang</h1>
+           <p class="w-25 text-center my-3">Kamu bisa pake kode referal untuk dibagikan ke temanmu kemudian dapet kelas gratis</p>
+           <button class="btn btn-secondary">Buat Akun</button>
+      </div>
+
+      <div class="footer d-flex justify-content-between">
+          <div class="logo d-flex flex-column my-5 align-items-center justify-content-center">
+            <div class="content">
+              <img src="assets/logo-2.png" alt="">
+              <p>since 2023</p>
+            </div>
+          </div>
+          <div class="tentang-becademy my-5">
+              <h3>Tentang becademy</h3>
+              <p>Araya, Tirtomoyo, Malang, Jawa Timur, Indonesia</p>
+              <button class="btn btn-secondary">chat whatsapp</button>
+          </div>
+          <div class="promo my-5">
+              <h3>Dapatkan promo menarik</h3>
+              <p>Cukup ketik email mu disini dan dapatkan penawaran promo menarik</p>
+              <div class="input-field rounded-3 d-flex align-items-center">
+                <input type="text" class="h-100 w-75 border-0" style="background-color: #3E4B7C; color: white;">
+                <input type="submit" value="subscribe" class="btn btn-secondary w-25">
+              </div>
+          </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
